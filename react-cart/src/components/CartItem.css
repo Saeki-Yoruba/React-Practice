@@ -1,0 +1,104 @@
+/* 列表整體樣式 */
+.cart-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 標題行樣式 */
+.cart-header {
+    font-weight: bold;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+}
+
+.cart-header-details {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.cart-header-id {
+    min-width: 30px;
+    font-size: 14px;
+}
+
+.cart-header-text {
+    min-width: 150px;
+    font-size: 14px;
+}
+
+.cart-header-price {
+    min-width: 100px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cart-header-action {
+    text-align: left;
+    font-size: 14px;
+    min-width: 70px;
+}
+
+/* 資料詳細部分 */
+.cart-item-details {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ID 欄 */
+.cart-item-id {
+    font-weight: bold;
+    color: #6c757d;
+    min-width: 30px;
+}
+
+/* 商品名稱欄 */
+.cart-item-text {
+    display: inline-block;
+    min-width: 150px;
+    padding: 2px 5px;
+    border-bottom: 1px dashed hsl(0, 0%, 0%);
+    cursor: text;
+    transition: background-color 0.2s ease;
+}
+
+.cart-item-text:hover {
+    background-color: #f8f9fa;
+}
+
+/* 價格欄 */
+.cart-item-price {
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+    padding: 2px 5px;
+    cursor: text;
+    transition: background-color 0.2s ease;
+}
+
+.cart-item-price:hover {
+    background-color: #f8f9fa;
+}
+
+/* 按鈕 */
+.btn-danger {
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
