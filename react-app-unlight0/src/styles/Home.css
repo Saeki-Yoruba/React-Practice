@@ -1,0 +1,39 @@
+.home-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+    min-height: 80vh;
+    /* 確保頁面佔滿視窗高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.home-container p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

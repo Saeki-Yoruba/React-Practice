@@ -1,0 +1,45 @@
+.recent-stories {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recent-stories h2 {
+    text-align: center;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+}
+
+.recent-stories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.story-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.story-item h4 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.story-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.story-item a {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.story-item a:hover {
+    text-decoration: underline;
+}

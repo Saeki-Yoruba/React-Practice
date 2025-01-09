@@ -1,0 +1,26 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 0 10px;
+    z-index: 1000;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    /* 確保高度明確 */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #e2e8f0;
+}

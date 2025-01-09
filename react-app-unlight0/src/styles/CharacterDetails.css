@@ -1,0 +1,191 @@
+/* 全局設置 */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9fafc;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 角色詳細區域 */
+.character-details {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    /* 增加與 footer 的間距 */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 名字與敘述區域 */
+.character-info-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+.character-info-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2b6cb0;
+    text-transform: capitalize;
+}
+
+.character-info-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4a5568;
+    margin: 0;
+}
+
+/* 卡面圖片區域 */
+.character-images-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.character-images-section h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2d3748;
+    text-align: center;
+}
+
+.character-images {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    gap: 10px;
+    justify-items: center;
+}
+
+.character-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.character-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 故事列表區域 */
+.character-stories {
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.character-stories h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2d3748;
+    text-align: center;
+}
+
+.character-stories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.story-item {
+    cursor: pointer;
+    padding: 15px;
+    background: #edf2f7;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-item h4 {
+    font-size: 18px;
+    color: #2b6cb0;
+    margin: 0;
+}
+
+.story-item:hover {
+    background-color: #e2e8f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 模態框 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h4 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #2d3748;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #718096;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: #e53e3e;
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 響應式適配 */
+@media (max-width: 768px) {
+    .character-images {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .story-item {
+        font-size: 14px;
+    }
+}

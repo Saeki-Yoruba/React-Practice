@@ -1,0 +1,121 @@
+/* 表單容器樣式 */
+.story-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.story-form:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* 標題樣式 */
+.story-form h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #2b6cb0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+/* 表單組樣式 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2b6cb0;
+    box-shadow: 0 0 6px rgba(43, 108, 176, 0.3);
+    outline: none;
+}
+
+/* 按鈕樣式 */
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #2b6cb0;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #1a4e80;
+    transform: scale(1.03);
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #666;
+}
+
+/* 消息樣式 */
+.message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
+
+.message.error {
+    color: red;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .story-form {
+        padding: 20px;
+    }
+
+    .story-form h2 {
+        font-size: 22px;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
