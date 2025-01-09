@@ -1,0 +1,71 @@
+.all-bookings {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9fb;
+    /* 柔和背景 */
+    border: 1px solid #dcdcdc;
+    /* 淺灰邊框 */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* 輕微陰影 */
+    font-family: 'Arial', sans-serif;
+}
+
+.all-bookings h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2d3748;
+    /* 深灰藍色標題 */
+    margin-bottom: 20px;
+}
+
+.all-bookings table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    /* 表格背景 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.all-bookings th,
+.all-bookings td {
+    border: 1px solid #e2e8f0;
+    /* 淡灰色邊框 */
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #4a5568;
+    /* 深灰文字 */
+}
+
+.all-bookings th {
+    background-color: #2b6cb0;
+    /* 藍色表頭 */
+    color: white;
+    font-weight: bold;
+}
+
+.all-bookings tr:nth-child(even) {
+    background-color: #f7fafc;
+    /* 淺灰交替背景 */
+}
+
+.all-bookings tr:hover {
+    background-color: #e2e8f0;
+    /* 懸浮效果 */
+}
+
+.all-bookings td {
+    color: #2d3748;
+    /* 深灰文字 */
+}
+
+.all-bookings p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #718096;
+    /* 淺灰文字 */
+    margin-top: 20px;
+}

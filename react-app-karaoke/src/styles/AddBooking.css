@@ -1,0 +1,144 @@
+/* 整體容器 */
+.add-booking {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f7f9fc;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* 標題樣式 */
+.add-booking h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* 表單標籤樣式 */
+.add-booking label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* 表單輸入框和下拉選單 */
+.add-booking input,
+.add-booking select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* 表單輸入框的焦點效果 */
+.add-booking input:focus,
+.add-booking select:focus {
+    outline: none;
+    border-color: #2b6cb0;
+    box-shadow: 0px 0px 8px rgba(43, 108, 176, 0.5);
+}
+
+/* 時間選擇區域 */
+.time-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+    /* 增加左右區域間距 */
+}
+
+/* 時間按鈕容器 */
+.time-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* 時間按鈕樣式 */
+.time-buttons button {
+    padding: 12px 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* 時間按鈕的懸停效果 */
+.time-buttons button:hover {
+    background-color: #e0eaff;
+    border-color: #2b6cb0;
+    transform: scale(1.05);
+    /* 添加輕微縮放效果 */
+}
+
+/* 被選中的按鈕 */
+.time-buttons button.selected {
+    background-color: #ffcc00;
+    /* 選中按鈕的黃色背景 */
+    color: #333;
+    /* 深灰色文字，與黃色背景形成對比 */
+    border-color: #d4a017;
+    /* 加深邊框顏色 */
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    /* 增加黃色陰影以強調選中效果 */
+    transform: scale(1.1);
+    /* 選中時稍微放大 */
+}
+
+/* 禁用的按鈕 */
+.time-buttons button.disabled {
+    background-color: #f1f1f1;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+/* 提交按鈕 */
+.add-booking button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #3f3f3f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* 提交按鈕的懸停效果 */
+.add-booking button:hover {
+    background-color: #256bac;
+    transform: translateY(-2px);
+}
+
+/* 響應式設計：小螢幕樣式 */
+@media (max-width: 768px) {
+    .add-booking {
+        padding: 20px;
+    }
+
+    .time-selection {
+        flex-direction: column;
+    }
+
+    .time-buttons {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,133 @@
+/* 全局樣式 */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 根容器樣式 */
+#root {
+  max-width: 1200px;
+  /* 限制根容器的寬度 */
+  margin: 20px auto;
+  /* 增加垂直和水平的間距 */
+  padding: 2rem;
+  /* 四周留有均勻內邊距 */
+  box-sizing: border-box;
+}
+
+
+/* Navbar 的間距 */
+.content {
+  margin-top: 60px;
+}
+
+/* 標題樣式 */
+h1,
+h2,
+h3 {
+  margin: 0 0 1rem;
+  font-weight: bold;
+  color: #2b6cb0;
+}
+
+/* 段落樣式 */
+p {
+  margin: 10 0 1rem;
+  color: #ffffff;
+}
+
+/* 表單樣式 */
+input,
+select,
+button {
+  font-size: 1rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  border-color: #2b6cb0;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(43, 108, 176, 0.5);
+}
+
+/* 按鈕樣式 */
+button {
+  background-color: #2b6cb0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1a4e80;
+  transform: scale(1.05);
+}
+
+/* 列表樣式 */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 1.5rem;
+}
+
+/* 表格樣式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  input,
+  select {
+    font-size: 0.95rem;
+  }
+
+  th,
+  td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,200 @@
+/* Booking List 容器樣式 */
+.booking-list {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #f9fafb;
+    /* 更柔和的背景色 */
+    border: 1px solid #e5e7eb;
+    /* 淺灰邊框 */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    /* 更深的陰影效果 */
+    font-family: 'Arial', sans-serif;
+}
+
+/* 當沒有預約時的文字樣式 */
+.booking-list p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2d3748;
+    /* 更深的灰色文字 */
+    margin-top: 20px;
+    background-color: #f1f5f9;
+    /* 淺灰背景色 */
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    /* 淺邊框色 */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    /* 柔和陰影 */
+}
+
+/* 標題樣式 */
+.booking-list h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #2b6cb0;
+    /* 深藍色標題 */
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* 卡片列表樣式 */
+.booking-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    /* 增加卡片間距 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 單個卡片樣式 */
+.booking-card {
+    flex: 1 1 calc(50% - 25px);
+    background-color: #ffffff;
+    /* 純白卡片背景 */
+    border: 1px solid #e2e8f0;
+    /* 柔和邊框 */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* 柔和的陰影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+}
+
+/* 卡片懸浮效果 */
+.booking-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 卡片標題 */
+.booking-card h3 {
+    font-size: 1.6rem;
+    color: #2c5282;
+    /* 深藍色標題 */
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+/* 卡片文字 */
+.booking-card p {
+    font-size: 1rem;
+    color: #4a5568;
+    /* 深灰文字 */
+    margin: 5px 0;
+    line-height: 1.8;
+}
+
+/* 按鈕樣式 */
+.booking-card button {
+    margin: 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 編輯按鈕 */
+.booking-card button.edit-btn {
+    background-color: #2b6cb0;
+    /* 清新綠色 */
+    color: #ffffff;
+}
+
+.booking-card button.edit-btn:hover {
+    background-color: #1d4a7a;
+    /* 深綠懸浮效果 */
+    transform: scale(1.05);
+}
+
+/* 刪除按鈕 */
+.booking-card button.delete-btn {
+    background-color: #f56565;
+    /* 紅色按鈕 */
+    color: #ffffff;
+}
+
+.booking-card button.delete-btn:hover {
+    background-color: #c53030;
+    /* 深紅懸浮效果 */
+    transform: scale(1.05);
+}
+
+/* 編輯表單樣式 */
+.edit-booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 表單標籤 */
+.edit-booking-form label {
+    font-size: 1rem;
+    color: #2d3748;
+    /* 更深的灰色文字 */
+    font-weight: bold;
+}
+
+/* 表單輸入框 */
+.edit-booking-form select,
+.edit-booking-form input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    background-color: #f7fafc;
+    /* 淺灰背景 */
+    color: #2d3748;
+}
+
+/* 表單按鈕 */
+.edit-booking-form button {
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 儲存按鈕 */
+.edit-booking-form button[type="submit"] {
+    background-color: #38b2ac;
+    /* 清新綠色 */
+    color: #ffffff;
+}
+
+.edit-booking-form button[type="submit"]:hover {
+    background-color: #2b6cb0;
+    transform: scale(1.05);
+}
+
+/* 取消按鈕 */
+.edit-booking-form button[type="button"] {
+    background-color: #f56565;
+    color: #ffffff;
+}
+
+.edit-booking-form button[type="button"]:hover {
+    background-color: #c53030;
+    transform: scale(1.05);
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .booking-card {
+        flex: 1 1 100%;
+    }
+}

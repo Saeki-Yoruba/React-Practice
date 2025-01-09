@@ -1,0 +1,75 @@
+.room-list {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f2f5;
+    /* 柔和的灰藍色背景 */
+    border: 1px solid #d1d5db;
+    /* 淡灰色邊框 */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* 輕微陰影 */
+}
+
+.room-list h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    /* 深灰色標題 */
+    margin-bottom: 20px;
+}
+
+.room-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* 使用 flex 布局，支持換行 */
+    gap: 20px;
+    /* 卡片之間的間距 */
+    justify-content: space-between;
+    /* 對齊方式 */
+}
+
+.room-list li {
+    flex: 1 1 calc(48% - 20px);
+    /* 寬度設置為兩欄，減去間距 */
+    background-color: #ffffff;
+    /* 白色卡片背景 */
+    border: 1px solid #e5e7eb;
+    /* 淡灰色邊框 */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* 卡片陰影 */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.room-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    /* 懸浮效果 */
+}
+
+.room-list li h3 {
+    font-size: 1.6em;
+    color: #007bff;
+    /* 藍色房間名稱 */
+    margin: 0 0 10px;
+}
+
+.room-list li p {
+    font-size: 1em;
+    color: #555;
+    /* 中灰色描述文字 */
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.room-list li p span {
+    font-weight: bold;
+    color: #333;
+    /* 強調的深灰色文字 */
+}

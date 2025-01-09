@@ -1,0 +1,69 @@
+/* 登入頁面容器樣式 */
+.login-page {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* 標題樣式 */
+.login-page h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+}
+
+/* 表單樣式 */
+.login-form label {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #444444;
+    font-weight: bold;
+}
+
+/* 輸入框樣式 */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* 輸入框聚焦效果 */
+.login-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 按鈕樣式 */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* 按鈕懸停效果 */
+.login-form button:hover {
+    background: linear-gradient(90deg, #0056b3, #004085);
+    transform: scale(1.05);
+}

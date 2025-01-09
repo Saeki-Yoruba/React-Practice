@@ -1,0 +1,153 @@
+/* Navbar 樣式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    background-color: #2b2b2b;
+    /* 深灰藍背景 */
+    color: #f9fafb;
+    /* 柔和白色文字 */
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* 增強陰影效果 */
+    font-size: 16px;
+    height: 70px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar 左側內容 */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* 增加標題與其他內容的間距 */
+}
+
+/* Navbar 標題 */
+.navbar-title {
+    font-size: 22px;
+    /* 更大標題字體 */
+    font-weight: bold;
+    color: #f9fafb;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    color: #fbbf24;
+    /* 橙黃色標誌 */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-logo:hover {
+    color: #fde68a;
+    /* 更亮的橙黃色 */
+}
+
+/* Navbar 連結樣式 */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    /* 增加按鈕間距 */
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.navbar-link,
+.navbar-button {
+    color: #f9fafb;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 20px;
+    /* 增大按鈕內邊距 */
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    border-radius: 30px;
+    /* 更圓的按鈕邊框 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    line-height: normal;
+}
+
+.navbar-link:hover,
+.navbar-button:hover {
+    background-color: #fbbf24;
+    /* 橙黃色背景 */
+    color: #1f2937;
+    /* 深灰藍文字 */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* 懸浮陰影效果 */
+}
+
+.navbar-button {
+    font-weight: 600;
+    /* 更粗的按鈕文字 */
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.navbar-button:hover {
+    border-color: #fbbf24;
+    /* 橙黃色邊框 */
+}
+
+/* 避免 Navbar 覆蓋內容 */
+.content {
+    margin-top: 80px;
+    /* 與 Navbar 的高度一致，留出空間 */
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 20px;
+    }
+
+    .navbar-left {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .navbar-link,
+    .navbar-button {
+        font-size: 18px;
+        /* 更大的字體，方便點擊 */
+        padding: 12px 20px;
+        text-align: center;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .content {
+        margin-top: 90px;
+        /* 適應更高的響應式 Navbar */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
